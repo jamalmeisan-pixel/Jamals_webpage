@@ -3,79 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamal's webpage</title>
-    <link rel="icon" type="image/png" href="Для гимпа.png" />
+    <title>Document</title>
+<style>
+    * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial;
+   text-align: center;
+}
+body{
+    background-color: aliceblue;
+}
+
+.header{
+    background: lightgreen;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.navbar{
+    background-color: antiquewhite;
+    border-top: 1px soild black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    height:500px;
+}
+.sidebar{
+flex: 1;
+background-color: greenyellow;
+padding:  20px;
+border-right: 1px solid green;
+}
+
+.main{
+    flex: 3;
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+.footer{
+    background-color: white;
+    border-top: 1px soild black;
+    padding: bold;
+    font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <h1>Jamal</h1>
-    <h2>my example</h2>
-    <form>
-        login: <input type="text" name="userID">
-        <br><br>
-        Password: <input type="password" name="password">
-        <div>
-        <button type="submit">log in</button>
-        </div>
-    </form>
-    <iframe src="main.html" width="205" height="380"> 
-    Sorry your browser does not support inline frames. 
-    </iframe>
-    <p>not just yellow but also strong - <strong><mark>example</mark></strong>.</p>
-    <table border="1">
-    <caption>IT-1-24</caption>
-        <tr>
-            <th>№</th>
-            <th>Name</th>
-            <th>OOP</th>
-            <th>EE</th>
-            <th>Math</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Jamal</td>
-            <td>60</td>
-            <td>90</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Adinay</td>
-            <td>70</td>
-            <td>80</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Bainur</td>
-            <td>80</td>
-            <td>70</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Ruslan</td>
-            <td>90</td>
-            <td>60</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <tfoot>
-                <td>Sum</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tfoot>
-        </tr>
-    </table>
-    <h3>Example of HTML List</h3>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText markup languague</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheet</dd>
-        <dt>JS</dt>
-        <dd>JavaScript</dd>
-    </dl>
+    <Header class="header"> Jamal's Homepage </Header>
+    <nav class="navbar">Navigation bar</nav>
+    <div class="container">
+        <Aside class="sidebar">Sidebar Content</Aside>
+        <main class="main">Main Content</main>
+    </div>
+    <Footer class="footer">Footer Section</Footer>
 </body>
 </html>
